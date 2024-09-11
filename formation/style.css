@@ -150,6 +150,11 @@ body {
 
 .flexlink > .item {
     text-align: center;
+    transition: 0.3s;
+}
+
+.flexlink > .item > .open-modal > img:hover {
+    scale: 1.05;
 }
 
 .flexlink > .item > .open-modal > h1 {
