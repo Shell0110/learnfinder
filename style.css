@@ -233,6 +233,7 @@ html {
 .footerflex {
     background-color: rgb(255, 255, 255);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 25px;
     gap: 25px;
@@ -244,7 +245,7 @@ html {
 
 .footerflex > .item:nth-child(2) {
     padding-top: 15px;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 
 .footerflex > .item {
@@ -265,12 +266,15 @@ html {
     font-weight: 700;
 }
 
-.footerflex > .item > a > img {
-    width: 40px;
-    height: 40px;
+.footerflex > .item > .reseau > a > img {
+    width: 35px;
+    height: 35px;
     border-bottom: none;
 }
 
+.footerflex > .item > .reseau {
+    text-decoration: none;
+}
 
 
 
@@ -429,6 +433,56 @@ html {
         font-size: 18px;
         color: gray;
     }
+
+    /* Footer */
+
+    .footerflex {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        padding: 25px;
+        gap: 10px;
+    }
+    
+    .footerflex > .item:nth-child(1) {
+        padding-top: 15px;
+        display: none;
+    }
+    
+    .footerflex > .item:nth-child(2) {
+        padding-top: 15px;
+        margin-left: 0px
+    }
+    
+    .footerflex > .item {
+        color: black;
+    }
+    
+    .footerflex > .item > a:nth-child(1) {
+        color: black;
+        font-size: 17px;
+        font-weight: 700;
+        border-bottom: solid 2px black;
+        text-decoration: none;
+    }
+    
+    .footerflex > .item > p {
+        color: black;
+        font-size: 17px;
+        font-weight: 700;
+    }
+    
+    .footerflex > .item > .reseau > a > img {
+        width: 35px;
+        height: 35px;
+        border-bottom: none;
+    }
+    
+    .footerflex > .item > .reseau {
+        text-decoration: none;
+    }
+
 
 }
 
