@@ -125,7 +125,7 @@ html {
 
 .title > h1 {
     font-size: 60px;
-    border-bottom: solid 2px var(--blue);
+    text-decoration: var(--blue) underline 2px;
 }
 
 .flex {
@@ -154,6 +154,10 @@ html {
     background-color: white;
     color: black;
     border: solid 1px white;
+}
+
+.flex > button:nth-last-of-type(2),.flex > button:nth-last-of-type(3) {
+    display: none;
 }
 
 /* Screen */
@@ -327,7 +331,6 @@ html {
 
     .title > h1 {
         font-size: 30px;
-        border-bottom: solid 2px var(--blue);
     }
 
     .flex {
@@ -432,6 +435,10 @@ html {
         line-height: 20px;
         font-size: 18px;
         color: gray;
+    }
+
+    .flex > button:nth-last-of-type(2),.flex > button:nth-last-of-type(3) {
+        display: block;
     }
 
     /* Footer */
